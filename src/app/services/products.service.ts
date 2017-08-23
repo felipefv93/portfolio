@@ -22,4 +22,8 @@ export class ProductsService {
      }
    }
 
+   public load_product(id:string){
+     return this.http.get(`https://paginaweb-b7a9c.firebaseio.com/products/${id}.json`)
+   }
+
 }
