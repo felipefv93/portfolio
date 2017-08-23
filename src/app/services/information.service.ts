@@ -24,7 +24,7 @@ export class InformationService {
    public load_about(){
       this.http.get("https://paginaweb-b7a9c.firebaseio.com/team.json")
         .subscribe(data=>{
-          console.log(data.json());
+          // console.log(data.json());
            this.team= data.json();
         })
    }
