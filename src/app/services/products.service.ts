@@ -17,6 +17,7 @@ export class ProductsService {
         .subscribe(data=>{
           console.log(data.json());
           this.loading_products = false;
+          this.products = data.json();
         });
      }
    }
