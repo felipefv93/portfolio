@@ -9,7 +9,7 @@ import { ProductsService} from '../../services/products.service';
 export class SearchComponent   {
 termino:string = undefined;
   constructor(private route:ActivatedRoute,
-              private _ps:ProductsService) { 
+              public _ps:ProductsService) { 
     route.params.subscribe(parameters=>{
       this.termino = parameters['word'];
       // console.log(this.termino);
